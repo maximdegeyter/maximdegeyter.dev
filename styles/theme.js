@@ -5,6 +5,7 @@ const customTheme = {
   fonts: {
     ...theme.fonts,
     body: 'system-ui, sans-serif',
+    lato: 'Lato',
   },
   fontSizes: {
     xs: '0.75rem',
@@ -22,8 +23,9 @@ const customTheme = {
     ...theme.colors,
     brand: {
       900: '#ea625f',
-      800: '#fcefef',
-      700: '#2a69ac',
+      800: '#FCB1AA',
+      700: '#FFE4DF',
+      600: '#FEFAFA',
     },
     text: {
       900: '#16102f',
