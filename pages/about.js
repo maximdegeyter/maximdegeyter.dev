@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>Maxim De Geyter</title>
+        <title>Maxim De Geyter | About</title>
         <link rel='icon' href='/logo.png' />
       </Head>
       <Flex
@@ -19,6 +19,7 @@ export default function About() {
         <Heading as='h1' size='xl' mb='2' color='text.900'>
           About.
         </Heading>
+        <Text>Coming soon. under construction..</Text>
       </Flex>
     </div>
   );
