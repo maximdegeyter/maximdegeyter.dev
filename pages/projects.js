@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex, Heading } from '@chakra-ui/core';
+import { Flex, Heading, Text } from '@chakra-ui/core';
 
 export default function Projects() {
   return (
