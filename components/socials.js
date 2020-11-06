@@ -1,5 +1,6 @@
 import { Flex, Link, IconButton } from '@chakra-ui/core';
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
+import { FaBehance } from 'react-icons/fa';
 
 export default function Socials() {
   return (
@@ -49,6 +50,23 @@ export default function Socials() {
           h='48px'
           aria-label='GitHub'
           icon={IoLogoGithub}
+          fontSize='36px'
+          color='text.700'
+          variant='link'
+          _hover={{ color: 'text.900' }}
+        />
+      </Link>
+      <Link
+        href='https://www.behance.net/maximdegeyter'
+        title='Behance'
+        isExternal
+        mr={3}
+      >
+        <IconButton
+          w='48px'
+          h='48px'
+          aria-label='GitHub'
+          icon={FaBehance}
           fontSize='36px'
           color='text.700'
           variant='link'
