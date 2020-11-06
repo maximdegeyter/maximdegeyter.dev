@@ -17,7 +17,7 @@ export default function Socials() {
           aria-label='Twitter'
           icon={IoLogoTwitter}
           fontSize='36px'
-          color='text.700'
+          color='text.800'
           variant='outline'
           _hover={{ color: 'text.900' }}
         />
@@ -34,7 +34,7 @@ export default function Socials() {
           aria-label='LinkedIn'
           icon={IoLogoLinkedin}
           fontSize='36px'
-          color='text.700'
+          color='text.800'
           variant='outline'
           _hover={{ color: 'text.900' }}
         />
@@ -51,7 +51,7 @@ export default function Socials() {
           aria-label='GitHub'
           icon={IoLogoGithub}
           fontSize='36px'
-          color='text.700'
+          color='text.800'
           variant='link'
           _hover={{ color: 'text.900' }}
         />
@@ -68,7 +68,7 @@ export default function Socials() {
           aria-label='GitHub'
           icon={FaBehance}
           fontSize='36px'
-          color='text.700'
+          color='text.800'
           variant='link'
           _hover={{ color: 'text.900' }}
         />
