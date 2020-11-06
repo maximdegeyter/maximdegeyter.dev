@@ -11,6 +11,7 @@ export default function Intro() {
       mb={4}
     >
       <Flex
+        w='100%'
         direction={[
           'column-reverse',
           'column-reverse',
@@ -26,7 +27,12 @@ export default function Intro() {
           mr={['0', '0', '0', '6']}
           w='100%'
         >
-          <Heading as='h1' size='2xl' mb='2' color='text.900'>
+          <Heading
+            as='h1'
+            fontSize={['2rem', '2rem', '3rem', '4rem']}
+            mb='2'
+            color='text.900'
+          >
             Hi, I'm Maxim.
           </Heading>
           <Heading as='h2' size='xl' color='brand.900'>
