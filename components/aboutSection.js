@@ -1,3 +1,4 @@
+import NextLink from 'next/link';
 import { Heading, Flex, Link, Button, Text } from '@chakra-ui/core';
 
 export default function AboutSection() {
@@ -9,7 +10,14 @@ export default function AboutSection() {
       mx='auto'
       mb='5'
     >
-      <Heading as='h3' size='lg' mb={2} color='text.900'>
+      <Heading
+        as='h3'
+        size='lg'
+        mb={2}
+        color='text.900'
+        fontFamily='lato'
+        fontWeight='900'
+      >
         About me.
       </Heading>
       <Text color='text.800'>
@@ -34,14 +42,14 @@ export default function AboutSection() {
         h='48px'
         w={['50%', '40%', '30%', '25%']}
         borderRadius='8px'
-        border='solid 1px'
-        borderColor='brand.900'
-        backgroundColor='brand.800'
-        color='text.900'
+        backgroundColor='brand.900'
+        color='white'
         mt='3'
-        _hover={{ backgroundColor: 'brand.900', color: 'white' }}
+        _hover={{ backgroundColor: 'red.700' }}
       >
-        More about me
+        <NextLink href='/about' passHref>
+          More about me
+        </NextLink>
       </Button>
     </Flex>
   );

@@ -13,6 +13,7 @@ export default function Header() {
       borderBottom='1px solid'
       borderBottomColor='text.600'
       px={['2', '3', '4', '0']}
+      fontFamily='lato'
     >
       <Flex
         py='16px'
@@ -25,7 +26,7 @@ export default function Header() {
       >
         <NextLink href='/' passHref>
           <Link as='a'>
-            <Heading as='h1' size={['md', 'lg']}>
+            <Heading as='h1' size={['md', 'lg']} fontFamily='lato' fontWeight='700'>
               &lt;Maxim&gt;
             </Heading>
           </Link>

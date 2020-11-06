@@ -4,6 +4,7 @@ import { Flex } from '@chakra-ui/core';
 import Intro from '../components/intro';
 import AboutSection from '../components/aboutSection';
 import Experience from '../components/experience';
+import ContactSection from '../components/contactSection';
 
 export default function Home() {
   return (
@@ -22,11 +23,12 @@ export default function Home() {
         maxWidth='960px'
         width='100%'
         mx='auto'
-        my='6'
+        my='5'
       >
         <Intro />
         <AboutSection />
         <Experience />
+        <ContactSection />
       </Flex>
     </>
   );

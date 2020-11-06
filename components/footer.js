@@ -10,6 +10,7 @@ export default function Footer() {
       h='192px'
       w='100vw'
       px={['2', '3', '4', '0']}
+      fontFamily='lato'
     >
       <Flex
         flexDirection={['column-reverse', 'column-reverse', 'row']}
