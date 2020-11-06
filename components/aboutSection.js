@@ -1,3 +1,4 @@
+import NextLink from 'next/link';
 import { Heading, Flex, Link, Button, Text } from '@chakra-ui/core';
 
 export default function AboutSection() {
@@ -41,7 +42,9 @@ export default function AboutSection() {
         mt='3'
         _hover={{ backgroundColor: 'brand.900', color: 'white' }}
       >
-        More about me
+        <NextLink href='/about' passHref>
+          More about me
+        </NextLink>
       </Button>
     </Flex>
   );
