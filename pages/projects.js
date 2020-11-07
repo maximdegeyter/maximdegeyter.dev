@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex, Heading, Text } from '@chakra-ui/core';
+import { Flex, Heading, Text, Box } from '@chakra-ui/core';
 
 export default function Projects() {
   return (
@@ -11,15 +11,18 @@ export default function Projects() {
       <Flex
         as='main'
         direction='column'
+        minHeight='55vh'
         maxWidth='960px'
         width='100%'
         mx='auto'
-        my='6'
+        my='16'
       >
-        <Heading as='h1' size='xl' mb='2' color='text.900'>
+        <Heading as='h1' size='xl' mb='8' color='text.900'>
           Projects.
         </Heading>
-        <Text>Coming soon. under construction..</Text>
+        <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
+          <Text>This is still being developed with Contentful CMS.</Text>
+        </Box>
       </Flex>
     </div>
   );

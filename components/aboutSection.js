@@ -8,12 +8,12 @@ export default function AboutSection() {
       px={['2', '3', '4', '0']}
       direction='column'
       mx='auto'
-      mb='5'
+      mb='16'
     >
       <Heading
         as='h3'
         size='lg'
-        mb={2}
+        mb={4}
         color='text.900'
         fontFamily='lato'
         fontWeight='900'
@@ -44,7 +44,7 @@ export default function AboutSection() {
         borderRadius='8px'
         backgroundColor='brand.900'
         color='white'
-        mt='3'
+        mt='6'
         _hover={{ backgroundColor: 'red.700' }}
       >
         <NextLink href='/about' passHref>
