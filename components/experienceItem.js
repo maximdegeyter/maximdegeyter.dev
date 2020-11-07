@@ -2,13 +2,13 @@ import { Heading, Flex, Box, Text } from '@chakra-ui/core';
 
 export default function ExperienceItem({ title, desc }) {
   return (
-    <Flex direction='row' ml='4' mb='3'>
+    <Flex direction='row' ml='8' mb='6'>
       <Box
         w='16px'
         h='16px'
         borderRadius='32px'
         backgroundColor='brand.900'
-        mr='3'
+        mr='4'
       ></Box>
       <Box
         borderWidth='1px'

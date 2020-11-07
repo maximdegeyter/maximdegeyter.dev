@@ -23,7 +23,7 @@ export default function Home() {
         maxWidth='960px'
         width='100%'
         mx='auto'
-        my='5'
+        my='16'
       >
         <Intro />
         <AboutSection />

@@ -8,6 +8,7 @@ export default function Experience() {
       px={['2', '3', '4', '0']}
       direction='column'
       mx='auto'
+      mb='16'
     >
       <Heading
         as='h3'
@@ -24,7 +25,7 @@ export default function Experience() {
           as='h4'
           size='sm'
           color='text.700'
-          mb='3'
+          mb='6'
           fontFamily='lato'
           fontWeight='700'
         >
@@ -48,7 +49,7 @@ export default function Experience() {
         />
       </Box>
       <Box w='100%' py='3' borderBottom='solid 1px' borderColor='text.600'>
-        <Heading as='h4' size='sm' color='text.700' mb='3' mt='1'>
+        <Heading as='h4' size='sm' color='text.700' mb='6' mt='2'>
           2019
         </Heading>
         <ExperienceItem
@@ -57,7 +58,7 @@ export default function Experience() {
         />
       </Box>
       <Box w='100%' py='3' borderBottom='solid 1px' borderColor='text.600'>
-        <Heading as='h4' size='sm' color='text.700' mb='3' mt='1'>
+        <Heading as='h4' size='sm' color='text.700' mb='6' mt='2'>
           2016
         </Heading>
         <ExperienceItem

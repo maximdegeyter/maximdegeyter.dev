@@ -17,6 +17,7 @@ export default function ContactSection() {
       align='center'
       mx='auto'
       mt='5'
+      mb='16'
     >
       <Box>
         <Heading as='h3' size='lg' color='text.900'>

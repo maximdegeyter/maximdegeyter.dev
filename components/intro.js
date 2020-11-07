@@ -8,7 +8,7 @@ export default function Intro() {
       align={['center', 'center', 'center', 'flex-start']}
       width='100%'
       mx='auto'
-      mb={4}
+      mb={12}
     >
       <Flex
         w='100%'
