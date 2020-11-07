@@ -18,7 +18,7 @@ export default function Socials() {
           icon={IoLogoTwitter}
           fontSize='36px'
           color='text.800'
-          variant='outline'
+          variant='link'
           _hover={{ color: 'text.900' }}
         />
       </Link>
@@ -35,7 +35,7 @@ export default function Socials() {
           icon={IoLogoLinkedin}
           fontSize='36px'
           color='text.800'
-          variant='outline'
+          variant='link'
           _hover={{ color: 'text.900' }}
         />
       </Link>
