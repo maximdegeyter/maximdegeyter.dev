@@ -13,13 +13,13 @@ export default function ExperienceItem({ title, desc }) {
       <Box
         borderWidth='1px'
         borderRadius='8px'
-        p='3'
+        p='6'
         w={['100%', '100%', '75%', '60%']}
       >
         <Heading
           as='h5'
           size='md'
-          mb='1'
+          mb='2'
           color='text.900'
           fontFamily='lato'
           fontWeight='900'
