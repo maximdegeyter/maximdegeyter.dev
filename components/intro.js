@@ -1,4 +1,4 @@
-import { Heading, Flex, Image, Box } from '@chakra-ui/core';
+import { Heading, Flex, Image } from '@chakra-ui/core';
 import Socials from './socials';
 
 export default function Intro() {
@@ -44,7 +44,7 @@ export default function Intro() {
             fontFamily='lato'
             fontWeight='700'
           >
-            Full-stack developer
+            Full Stack JS developer
           </Heading>
         </Flex>
         <Image
