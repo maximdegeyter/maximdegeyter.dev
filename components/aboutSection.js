@@ -10,17 +10,10 @@ export default function AboutSection() {
       mx='auto'
       mb='16'
     >
-      <Heading
-        as='h3'
-        size='lg'
-        mb={4}
-        color='text.900'
-        fontFamily='lato'
-        fontWeight='900'
-      >
+      <Heading as='h3' size='lg' mb={4} color='text.900' fontWeight='900'>
         About me.
       </Heading>
-      <Text color='text.800'>
+      <Text color='text.800' lineHeight='170%' letterSpacing='.005rem'>
         I'm a 25 year old{' '}
         <Text as='span' fontWeight='bold' color='text.900'>
           Devine (Digital design & development) alumni

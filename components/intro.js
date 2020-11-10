@@ -34,23 +34,22 @@ export default function Intro() {
             fontSize={['2rem', '2rem', '3rem', '4rem']}
             mb='2'
             color='text.900'
-            fontFamily='lato'
             fontWeight='900'
           >
             Hi, I'm Maxim.
           </Heading>
-          <Heading
-            as='h2'
-            size='xl'
-            color='brand.900'
-            fontFamily='lato'
-            fontWeight='700'
-          >
+          <Heading as='h2' size='xl' color='brand.900' fontWeight='700'>
             Full Stack JS developer
           </Heading>
         </Flex>
         <Box w={['240px', '240px', '360px']} h={['240px', '240px', '360px']}>
-          <Image src='/maxim.png' alt='Maxim De Geyter' width='1000' height='1000' layout='responsive' />
+          <Image
+            src='/maxim.png'
+            alt='Maxim De Geyter'
+            width='1000'
+            height='1000'
+            layout='responsive'
+          />
         </Box>
       </Flex>
       <Socials />

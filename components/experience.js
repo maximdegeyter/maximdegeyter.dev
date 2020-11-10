@@ -10,25 +10,11 @@ export default function Experience() {
       mx='auto'
       mb='16'
     >
-      <Heading
-        as='h3'
-        size='lg'
-        mb={2}
-        color='text.900'
-        fontFamily='lato'
-        fontWeight='900'
-      >
+      <Heading as='h3' size='lg' mb={2} color='text.900' fontWeight='900'>
         Experience & Education.
       </Heading>
       <Box w='100%' py='3' borderBottom='solid 1px' borderColor='text.600'>
-        <Heading
-          as='h4'
-          size='sm'
-          color='text.700'
-          mb='6'
-          fontFamily='lato'
-          fontWeight='700'
-        >
+        <Heading as='h4' size='sm' color='text.700' mb='6' fontWeight='700'>
           2020
         </Heading>
         <ExperienceItem

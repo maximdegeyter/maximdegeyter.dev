@@ -6,7 +6,6 @@ const customTheme = {
   fonts: {
     ...theme.fonts,
     body: 'Lato',
-    lato: 'Lato',
   },
   fontSizes: {
     xs: '0.75rem',
