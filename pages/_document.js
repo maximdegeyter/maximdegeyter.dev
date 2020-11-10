@@ -8,9 +8,17 @@ class MyDocument extends Document {
           <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <link
+            rel='preload'
             href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'
-            rel='stylesheet'
+            as='style'
+            onload="this.onload=null;this.rel='stylesheet'"
           />
+          <noscript>
+            <link
+              rel='stylesheet'
+              href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'
+            />
+          </noscript>
         </Head>
         <body>
           <Main />
