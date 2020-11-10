@@ -26,6 +26,7 @@ export default function Intro() {
           direction='column'
           align={['center', 'center', 'center', 'flex-start']}
           mr={['0', '0', '0', '6']}
+          mt={['6', '6', '6', '0']}
           w={['100%', '100%', '100%', '50%']}
         >
           <Heading
