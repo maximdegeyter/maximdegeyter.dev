@@ -1,28 +1,19 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { Flex, Heading, Box } from '@chakra-ui/core';
-import Project from '../components/project';
 
-const client = require('contentful').createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-});
+import Project from '../components/project';
+import { fetchEntries } from '../lib/contentful';
 
 export default function Projects() {
-  async function fetchEntries() {
-    const entries = await client.getEntries();
-    if (entries.items) return entries.items;
-    console.log(`Error getting Entries for ${contentType.name}.`);
-  }
-
-  const [posts, setPosts] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    async function getPosts() {
-      const allPosts = await fetchEntries();
-      setPosts([...allPosts]);
+    async function getProjects() {
+      const allProjects = await fetchEntries();
+      setProjects([...allProjects]);
     }
-    getPosts();
+    getProjects();
   }, []);
 
   return (
@@ -44,14 +35,14 @@ export default function Projects() {
           Projects.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
-          {posts.length > 0
-            ? posts.map((p) => (
+          {projects.length > 0
+            ? projects.map((project) => (
                 <Project
-                  title={p.fields.title}
-                  desc={p.fields.description}
-                  tags={p.fields.tags}
-                  img={p.fields.image}
-                  url={p.fields.url}
+                  title={project.fields.title}
+                  desc={project.fields.description}
+                  tags={project.fields.tags}
+                  img={project.fields.image}
+                  url={project.fields.url}
                 />
               ))
             : null}
