@@ -16,14 +16,7 @@ export default function ExperienceItem({ title, desc }) {
         p='6'
         w={['100%', '100%', '75%', '60%']}
       >
-        <Heading
-          as='h5'
-          size='md'
-          mb='2'
-          color='text.900'
-          fontFamily='lato'
-          fontWeight='900'
-        >
+        <Heading as='h5' size='md' mb='2' color='text.900' fontWeight='900'>
           {title}
         </Heading>
         <Text color='text.800'>{desc}</Text>

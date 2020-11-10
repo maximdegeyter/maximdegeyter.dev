@@ -1,7 +1,21 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { Flex, Heading, Text, Box } from '@chakra-ui/core';
+import { Flex, Heading, Box } from '@chakra-ui/core';
+
+import Project from '../components/project';
+import { fetchEntries } from '../lib/contentful';
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    async function getProjects() {
+      const allProjects = await fetchEntries();
+      setProjects([...allProjects]);
+    }
+    getProjects();
+  }, []);
+
   return (
     <div>
       <Head>
@@ -17,11 +31,21 @@ export default function Projects() {
         mx='auto'
         my='16'
       >
-        <Heading as='h1' size='xl' mb='8' color='text.900'>
+        <Heading as='h2' size='xl' mb='8' color='text.900'>
           Projects.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
-          <Text>This is still being developed with Contentful CMS.</Text>
+          {projects.length > 0
+            ? projects.map((project) => (
+                <Project
+                  title={project.fields.title}
+                  desc={project.fields.description}
+                  tags={project.fields.tags}
+                  img={project.fields.image}
+                  url={project.fields.url}
+                />
+              ))
+            : null}
         </Box>
       </Flex>
     </div>

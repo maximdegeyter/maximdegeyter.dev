@@ -13,7 +13,6 @@ export default function Header() {
       borderBottom='1px solid'
       borderBottomColor='text.600'
       px={['2', '3', '4', '0']}
-      fontFamily='lato'
     >
       <Flex
         py='16px'
@@ -26,7 +25,7 @@ export default function Header() {
       >
         <NextLink href='/' passHref>
           <Link as='a'>
-            <Heading as='h1' size={['md', 'lg']} fontFamily='lato' fontWeight='700'>
+            <Heading as='h1' size={['md', 'lg']} fontWeight='700'>
               &lt;Maxim&gt;
             </Heading>
           </Link>
@@ -35,7 +34,7 @@ export default function Header() {
           <NextLink href='/about' passHref>
             <Link
               as='a'
-              px={['1','3', '4']}
+              px={['1', '3', '4']}
               color={router.pathname == '/about' ? 'brand.900' : 'text.900'}
               fontWeight={router.pathname == '/about' ? 'bold' : 'regular'}
             >

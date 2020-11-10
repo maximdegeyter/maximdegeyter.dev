@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 
 import customTheme from '../styles/theme';

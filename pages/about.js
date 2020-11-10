@@ -1,5 +1,13 @@
 import Head from 'next/head';
-import { Box, Flex, Heading, List, ListItem, ListIcon, Text } from '@chakra-ui/core';
+import {
+  Box,
+  Flex,
+  Heading,
+  List,
+  ListItem,
+  ListIcon,
+  Text,
+} from '@chakra-ui/core';
 import { MdCheckCircle } from 'react-icons/md';
 
 export default function About() {
@@ -17,14 +25,7 @@ export default function About() {
         mx='auto'
         my='16'
       >
-        <Heading
-          as='h2'
-          size='xl'
-          mb='8'
-          color='text.900'
-          fontFamily='lato'
-          fontWeight='900'
-        >
+        <Heading as='h2' size='xl' mb='8' color='text.900' fontWeight='900'>
           About.
         </Heading>
         <Box
@@ -65,14 +66,7 @@ export default function About() {
           </List>
         </Box>
         <Box w='100%' py='3' borderBottom='solid 1px' borderColor='text.600'>
-          <Heading
-            as='h3'
-            size='lg'
-            mb='2'
-            color='text.900'
-            fontFamily='lato'
-            fontWeight='900'
-          >
+          <Heading as='h3' size='lg' mb='2' color='text.900' fontWeight='900'>
             Tech Stack
           </Heading>
         </Box>
