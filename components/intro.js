@@ -1,4 +1,5 @@
-import { Heading, Flex, Image } from '@chakra-ui/core';
+import Image from 'next/image';
+import { Heading, Flex, Box } from '@chakra-ui/core';
 import Socials from './socials';
 
 export default function Intro() {
@@ -25,7 +26,7 @@ export default function Intro() {
           direction='column'
           align={['center', 'center', 'center', 'flex-start']}
           mr={['0', '0', '0', '6']}
-          w='100%'
+          w={['100%', '100%', '100%', '50%']}
         >
           <Heading
             as='h1'
@@ -47,11 +48,9 @@ export default function Intro() {
             Full Stack JS developer
           </Heading>
         </Flex>
-        <Image
-          src='/maxim.png'
-          alt='Maxim De Geyter'
-          size={['240px', '240px', '360px']}
-        ></Image>
+        <Box w={['240px', '240px', '360px']} h={['240px', '240px', '360px']}>
+          <Image src='/maxim.png' alt='Maxim De Geyter' width='1000' height='1000' layout='responsive' />
+        </Box>
       </Flex>
       <Socials />
     </Flex>
