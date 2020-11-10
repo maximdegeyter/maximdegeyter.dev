@@ -5,7 +5,7 @@ const customTheme = {
   breakpoints: ['30em', '48em', '62em', '80em'],
   fonts: {
     ...theme.fonts,
-    body: 'system-ui, sans-serif',
+    body: 'Lato',
     lato: 'Lato',
   },
   fontSizes: {
@@ -29,8 +29,8 @@ const customTheme = {
       600: '#FEFAFA',
     },
     text: {
-      900: '#16102f',
-      800: '#514c63',
+      900: '#1B2738',
+      800: '#717780',
       700: '#8a8797',
       600: '#e2e8f0',
     },
