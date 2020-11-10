@@ -28,6 +28,7 @@ export default function Projects() {
         minHeight='55vh'
         maxWidth='960px'
         width='100%'
+        px={['2', '3', '4', '0']}
         mx='auto'
         my='16'
       >

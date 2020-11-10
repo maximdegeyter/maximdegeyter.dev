@@ -13,14 +13,14 @@ export default function Project({ title, desc, tags, img, url }) {
         _hover={{ textDecoration: 'none' }}
       >
         <Flex
-          direction='row-reverse'
+          direction={['column-reverse', 'column-reverse', 'row-reverse']}
           align='center'
           justify='flex-end'
           borderWidth='1px'
           borderRadius='8px'
           p='6'
           w='100%'
-          h='168px'
+          h={['312px', '312px', '168px']}
           mb='6'
         >
           <Box h='118px'>
@@ -43,7 +43,8 @@ export default function Project({ title, desc, tags, img, url }) {
             borderWidth='1px'
             borderRadius='8px'
             borderColor='white'
-            mr='4'
+            mr={['0', '0', '4']}
+            mb={['8', '8', '0']}
           >
             <Image
               src={`https:${img.fields.file.url}`}
