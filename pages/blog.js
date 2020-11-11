@@ -33,10 +33,15 @@ export default function Blog() {
           Blog.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
-          <Text color={iconColor[colorMode]} lineHeight='170%' letterSpacing='.005rem'>
+          <Text
+            color={iconColor[colorMode]}
+            fontSize='lg'
+            lineHeight='170%'
+            letterSpacing='.005rem'
+          >
             I might start writing my own blog soon. For now you can check out my
             blog on Medium about{' '}
-            <Text fontWeight='700' color={textColor[colorMode]}>
+            <Text as='strong' color={textColor[colorMode]}>
               machine learning in iOS development!
             </Text>
           </Text>

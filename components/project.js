@@ -20,12 +20,12 @@ export default function Project({ title, desc, tags, img, url, colorMode }) {
           borderWidth='1px'
           borderRadius='8px'
           borderColor={borderColor[colorMode]}
-          p='6'
+          p='4'
           w='100%'
           h={['312px', '312px', '168px']}
           mb='6'
         >
-          <Box h='118px'>
+          <Box h='134px' w={'calc(100% - 134px)'}>
             {tags.length > 0
               ? tags.map((tag) => (
                   <Badge backgroundColor={tagBgColor[colorMode]} mb='2' mr='2'>
@@ -37,14 +37,22 @@ export default function Project({ title, desc, tags, img, url, colorMode }) {
             <Heading as='h3' size='lg' mb='4' color={textColor[colorMode]}>
               {title}
             </Heading>
-            <Text color={iconColor[colorMode]}>{desc}</Text>
+            <Text
+              color={iconColor[colorMode]}
+              fontSize='lg'
+              lineHeight='170%'
+              letterSpacing='.005rem'
+            >
+              {desc}
+            </Text>
           </Box>
           <Box
-            h='118px'
-            w='118px'
+            h='134px'
+            w='134px'
             borderWidth='1px'
             borderRadius='8px'
             borderColor='white'
+            overflow='hidden'
             mr={['0', '0', '4']}
             mb={['8', '8', '0']}
           >
@@ -54,6 +62,7 @@ export default function Project({ title, desc, tags, img, url, colorMode }) {
               width='1000'
               height='1000'
               layout='responsive'
+              objectFit='cover'
             />
           </Box>
         </Flex>
