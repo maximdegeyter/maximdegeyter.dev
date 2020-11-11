@@ -6,7 +6,6 @@ import {
   List,
   ListItem,
   ListIcon,
-  Text,
 } from '@chakra-ui/core';
 import { MdCheckCircle } from 'react-icons/md';
 
@@ -20,10 +19,12 @@ export default function About() {
       <Flex
         as='main'
         direction='column'
+        minHeight='55vh'
         maxWidth='960px'
         width='100%'
         mx='auto'
         my='16'
+        px={['2', '3', '4', '0']}
       >
         <Heading as='h2' size='xl' mb='8' color='text.900' fontWeight='900'>
           About.
