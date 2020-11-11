@@ -24,23 +24,38 @@ export default function AboutSection({ colorMode }) {
         color={iconColor[colorMode]}
         lineHeight='170%'
         letterSpacing='.005rem'
+        fontSize='lg'
       >
-        I'm a 25 year old{' '}
-        <Text as='span' fontWeight='bold' color={textColor[colorMode]}>
-          Devine (Digital design & development) alumni
-        </Text>{' '}
-        from Ghent, Belgium 🇧🇪. Recently, I started my first job as an AEM
-        developer for{' '}
+        Hi 👋, I’m Maxim, welcome to my place on the web! I’m a Full Stack JS
+        developer 👨‍💻, who likes to create creative digital products. I graduated
+        in{' '}
         <Link
-          color='blue.400'
-          textDecoration='underline'
+          color='red.500'
+          href='https://www.devine.be/en/'
+          isExternal
+          _hover={{ textDecoration: 'underline' }}
+        >
+          Digital Design &amp; Development
+        </Link>{' '}
+        🎓 in 2020 and currently work at{' '}
+        <Link
+          color='red.500'
           href='https://www.capgemini.com/'
           isExternal
+          _hover={{ textDecoration: 'underline' }}
         >
-          Capgemini ♠️
-        </Link>
-        . If I'm not busy programming or designing, then you'll probably find me
-        near a comic book, something Star Wars related, or a basketball!
+          Capgemini
+        </Link>{' '}
+        as an AEM developer! I have a passion for new technologies
+        and everything creative, currently focusing on{' '}
+        <Text as='strong' color={textColor[colorMode]}>
+          Jamstack ⚡️
+        </Text>{' '}
+        and{' '}
+        <Text as='strong' color={textColor[colorMode]}>
+          Mern-stack ⚛️
+        </Text>{' '}
+        applications.
       </Text>
       <Button
         h='48px'
