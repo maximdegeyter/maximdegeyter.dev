@@ -29,7 +29,14 @@ export default function ExperienceItem({ colorMode, title, desc }) {
         >
           {title}
         </Heading>
-        <Text color={iconColor[colorMode]}>{desc}</Text>
+        <Text
+          color={iconColor[colorMode]}
+          lineHeight='170%'
+          letterSpacing='.005rem'
+          fontSize='lg'
+        >
+          {desc}
+        </Text>
       </Box>
     </Flex>
   );

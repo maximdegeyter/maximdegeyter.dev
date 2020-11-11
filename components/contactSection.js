@@ -14,7 +14,7 @@ export default function ContactSection({ colorMode }) {
     >
       <Flex
         w='100%'
-        p='6'
+        p='4'
         bg={bgColor[colorMode]}
         borderWidth='1px'
         borderRadius='8px'
@@ -27,7 +27,12 @@ export default function ContactSection({ colorMode }) {
           <Heading as='h3' size='lg' color={textColor[colorMode]}>
             Interested in a collaboration or chat?
           </Heading>
-          <Text color={iconColor[colorMode]}>
+          <Text
+            color={iconColor[colorMode]}
+            lineHeight='170%'
+            letterSpacing='.005rem'
+            fontSize='lg'
+          >
             I like to work on cool stuff, so hit me up!
           </Text>
         </Box>
