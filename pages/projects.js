@@ -34,7 +34,13 @@ export default function Projects() {
         mx='auto'
         my='16'
       >
-        <Heading as='h2' size='xl' mb='8' color={textColor[colorMode]}>
+        <Heading
+          as='h2'
+          size='xl'
+          mb='8'
+          fontWeight='900'
+          color={textColor[colorMode]}
+        >
           Projects.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>

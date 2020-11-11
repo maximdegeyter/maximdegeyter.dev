@@ -5,7 +5,7 @@ const customTheme = {
   breakpoints: ['30em', '48em', '62em', '80em'],
   fonts: {
     ...theme.fonts,
-    body: 'Lato',
+    body: `'Lato', sans-serif`,
   },
   fontSizes: {
     xs: '0.75rem',
