@@ -52,6 +52,7 @@ export default function Project({ title, desc, tags, img, url, colorMode }) {
             borderWidth='1px'
             borderRadius='8px'
             borderColor='white'
+            overflow='hidden'
             mr={['0', '0', '4']}
             mb={['8', '8', '0']}
           >
@@ -61,6 +62,7 @@ export default function Project({ title, desc, tags, img, url, colorMode }) {
               width='1000'
               height='1000'
               layout='responsive'
+              objectFit='cover'
             />
           </Box>
         </Flex>
