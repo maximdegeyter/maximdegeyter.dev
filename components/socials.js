@@ -2,7 +2,9 @@ import { Flex, Link, IconButton } from '@chakra-ui/core';
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { FaBehance } from 'react-icons/fa';
 
-export default function Socials() {
+import { iconColor, textColor } from '../styles/theme';
+
+export default function Socials({ colorMode }) {
   return (
     <Flex my={4} direction='row'>
       <Link
@@ -17,9 +19,9 @@ export default function Socials() {
           aria-label='Twitter'
           icon={IoLogoTwitter}
           fontSize='36px'
-          color='text.800'
+          color={iconColor[colorMode]}
           variant='link'
-          _hover={{ color: 'text.900' }}
+          _hover={{ color: textColor[colorMode] }}
         />
       </Link>
       <Link
@@ -34,9 +36,9 @@ export default function Socials() {
           aria-label='LinkedIn'
           icon={IoLogoLinkedin}
           fontSize='36px'
-          color='text.800'
+          color={iconColor[colorMode]}
           variant='link'
-          _hover={{ color: 'text.900' }}
+          _hover={{ color: textColor[colorMode] }}
         />
       </Link>
       <Link
@@ -51,9 +53,9 @@ export default function Socials() {
           aria-label='GitHub'
           icon={IoLogoGithub}
           fontSize='36px'
-          color='text.800'
+          color={iconColor[colorMode]}
           variant='link'
-          _hover={{ color: 'text.900' }}
+          _hover={{ color: textColor[colorMode] }}
         />
       </Link>
       <Link
@@ -68,9 +70,9 @@ export default function Socials() {
           aria-label='GitHub'
           icon={FaBehance}
           fontSize='36px'
-          color='text.800'
+          color={iconColor[colorMode]}
           variant='link'
-          _hover={{ color: 'text.900' }}
+          _hover={{ color: textColor[colorMode] }}
         />
       </Link>
     </Flex>

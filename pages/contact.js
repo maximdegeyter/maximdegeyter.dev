@@ -11,10 +11,13 @@ import {
   Stack,
   Box,
   Textarea,
+  useColorMode,
 } from '@chakra-ui/core';
+import { textColor } from '../styles/theme';
 
 export default function Contact() {
   const [status, setStatus] = useState('');
+  const { colorMode } = useColorMode();
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -50,7 +53,7 @@ export default function Contact() {
         mx='auto'
         my='16'
       >
-        <Heading as='h1' size='xl' mb='8' color='text.900'>
+        <Heading as='h1' size='xl' mb='8' color={textColor[colorMode]}>
           Contact.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
@@ -87,11 +90,10 @@ export default function Contact() {
                     h='48px'
                     w={['50%', '40%', '30%', '25%']}
                     borderRadius='8px'
-                    borderColor='none'
-                    backgroundColor='brand.900'
+                    backgroundColor='red.500'
                     color='white'
                     mt='3'
-                    _hover={{ backgroundColor: 'red.700' }}
+                    _hover={{ backgroundColor: 'red.600' }}
                   />
                 )}
                 {status === 'ERROR' && (

@@ -1,9 +1,19 @@
 import Head from 'next/head';
-import NextLink from 'next/link';
-import { Flex, Heading, Text, Button, Box, Link } from '@chakra-ui/core';
+import {
+  Flex,
+  Heading,
+  Text,
+  Button,
+  Box,
+  Link,
+  useColorMode,
+} from '@chakra-ui/core';
 import { FaMedium } from 'react-icons/fa';
+import { textColor, iconColor } from '../styles/theme';
 
 export default function Blog() {
+  const { colorMode } = useColorMode();
+
   return (
     <div>
       <Head>
@@ -19,18 +29,21 @@ export default function Blog() {
         mx='auto'
         my='16'
       >
-        <Heading as='h1' size='xl' mb='8' color='text.900'>
+        <Heading as='h1' size='xl' mb='8' color={textColor[colorMode]}>
           Blog.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
-          <Text>
+          <Text color={iconColor[colorMode]} lineHeight='170%' letterSpacing='.005rem'>
             I might start writing my own blog soon. For now you can check out my
             blog on Medium about{' '}
-            <Text fontWeight='700'>machine learning in iOS development!</Text>
+            <Text fontWeight='700' color={textColor[colorMode]}>
+              machine learning in iOS development!
+            </Text>
           </Text>
           <Link
             href='https://medium.com/maxims-passion-project'
             title='Medium'
+            _hover={{ textDecoration: 'none' }}
             isExternal
           >
             <Button

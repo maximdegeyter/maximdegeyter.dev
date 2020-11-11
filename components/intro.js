@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import { Heading, Flex, Box } from '@chakra-ui/core';
-import Socials from './socials';
 
-export default function Intro() {
+import Socials from './socials';
+import { textColor } from '../styles/theme';
+
+export default function Intro({ colorMode }) {
   return (
     <Flex
       direction='column'
@@ -33,12 +35,12 @@ export default function Intro() {
             as='h1'
             fontSize={['2rem', '2rem', '3rem', '4rem']}
             mb='2'
-            color='text.900'
+            color={textColor[colorMode]}
             fontWeight='900'
           >
             Hi, I'm Maxim.
           </Heading>
-          <Heading as='h2' size='xl' color='brand.900' fontWeight='700'>
+          <Heading as='h2' size='xl' color='red.500' fontWeight='700'>
             Full Stack JS developer
           </Heading>
         </Flex>
@@ -52,7 +54,7 @@ export default function Intro() {
           />
         </Box>
       </Flex>
-      <Socials />
+      <Socials colorMode={colorMode} />
     </Flex>
   );
 }

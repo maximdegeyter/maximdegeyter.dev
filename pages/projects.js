@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { Flex, Heading, Box } from '@chakra-ui/core';
+import { Flex, Heading, Box, useColorMode } from '@chakra-ui/core';
 
 import Project from '../components/project';
 import { fetchEntries } from '../lib/contentful';
+import { textColor } from '../styles/theme';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const { colorMode } = useColorMode();
 
   useEffect(() => {
     async function getProjects() {
@@ -32,7 +34,7 @@ export default function Projects() {
         mx='auto'
         my='16'
       >
-        <Heading as='h2' size='xl' mb='8' color='text.900'>
+        <Heading as='h2' size='xl' mb='8' color={textColor[colorMode]}>
           Projects.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
@@ -44,6 +46,7 @@ export default function Projects() {
                   tags={project.fields.tags}
                   img={project.fields.image}
                   url={project.fields.url}
+                  colorMode={colorMode}
                 />
               ))
             : null}
