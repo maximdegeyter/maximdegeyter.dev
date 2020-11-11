@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { Flex, Heading, Text, Button, Box } from '@chakra-ui/core';
+import { Flex, Heading, Text, Button, Box, Link } from '@chakra-ui/core';
 import { FaMedium } from 'react-icons/fa';
 
 export default function Blog() {
@@ -28,23 +28,23 @@ export default function Blog() {
             blog on Medium about{' '}
             <Text fontWeight='700'>machine learning in iOS development!</Text>
           </Text>
-          <Button
-            w={['45%', '40%', '30%', '25%']}
-            borderRadius='8px'
-            backgroundColor='black'
-            color='white'
-            leftIcon={FaMedium}
-            _hover={{ backgroundColor: 'gray.600' }}
-            mt='8'
+          <Link
+            href='https://medium.com/maxims-passion-project'
+            title='Medium'
+            isExternal
           >
-            <NextLink
-              href='https://medium.com/maxims-passion-project'
-              title='Medium'
-              isExternal
+            <Button
+              w={['45%', '40%', '30%', '25%']}
+              borderRadius='8px'
+              backgroundColor='black'
+              color='white'
+              leftIcon={FaMedium}
+              _hover={{ backgroundColor: 'gray.600' }}
+              mt='8'
             >
               Medium
-            </NextLink>
-          </Button>
+            </Button>
+          </Link>
         </Box>
       </Flex>
     </div>
