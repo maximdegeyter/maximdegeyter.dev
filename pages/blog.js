@@ -29,7 +29,13 @@ export default function Blog() {
         mx='auto'
         my='16'
       >
-        <Heading as='h1' size='xl' mb='8' color={textColor[colorMode]}>
+        <Heading
+          as='h1'
+          size='xl'
+          mb='8'
+          fontWeight='900'
+          color={textColor[colorMode]}
+        >
           Blog.
         </Heading>
         <Box w={['100%', '100%', '100%', '720px']} mx='auto'>
