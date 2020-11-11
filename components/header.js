@@ -51,7 +51,7 @@ export default function Header() {
               as='a'
               px={['1', '3', '4']}
               color={
-                router.pathname == '/about' ? 'brand.900' : textColor[colorMode]
+                router.pathname == '/about' ? 'red.500' : textColor[colorMode]
               }
               fontWeight={router.pathname == '/about' ? 'bold' : 'regular'}
             >
@@ -64,7 +64,7 @@ export default function Header() {
               px={['1', '3', '4']}
               color={
                 router.pathname == '/projects'
-                  ? 'brand.900'
+                  ? 'red.500'
                   : textColor[colorMode]
               }
               fontWeight={router.pathname == '/projects' ? 'bold' : 'regular'}
@@ -77,9 +77,7 @@ export default function Header() {
               as='a'
               px={['1', '3', '4']}
               color={
-                router.pathname == '/contact'
-                  ? 'brand.900'
-                  : textColor[colorMode]
+                router.pathname == '/contact' ? 'red.500' : textColor[colorMode]
               }
               fontWeight={router.pathname == '/contact' ? 'bold' : 'regular'}
             >
@@ -91,7 +89,7 @@ export default function Header() {
               as='a'
               px={['1', '3', '4']}
               color={
-                router.pathname == '/blog' ? 'brand.900' : textColor[colorMode]
+                router.pathname == '/blog' ? 'red.500' : textColor[colorMode]
               }
               fontWeight={router.pathname == '/blog' ? 'bold' : 'regular'}
             >

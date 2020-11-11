@@ -11,10 +11,20 @@ export default function AboutSection({ colorMode }) {
       mx='auto'
       mb='16'
     >
-      <Heading as='h3' size='lg' mb={4} color={textColor[colorMode]} fontWeight='900'>
+      <Heading
+        as='h3'
+        size='lg'
+        mb={4}
+        color={textColor[colorMode]}
+        fontWeight='900'
+      >
         About me.
       </Heading>
-      <Text color={iconColor[colorMode]} lineHeight='170%' letterSpacing='.005rem'>
+      <Text
+        color={iconColor[colorMode]}
+        lineHeight='170%'
+        letterSpacing='.005rem'
+      >
         I'm a 25 year old{' '}
         <Text as='span' fontWeight='bold' color={textColor[colorMode]}>
           Devine (Digital design & development) alumni
@@ -36,7 +46,7 @@ export default function AboutSection({ colorMode }) {
         h='48px'
         w={['50%', '40%', '30%', '25%']}
         borderRadius='8px'
-        backgroundColor='brand.900'
+        backgroundColor='red.500'
         color='white'
         mt='6'
         _hover={{ backgroundColor: 'red.600' }}

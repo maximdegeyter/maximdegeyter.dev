@@ -40,7 +40,7 @@ export default function Intro({ colorMode }) {
           >
             Hi, I'm Maxim.
           </Heading>
-          <Heading as='h2' size='xl' color='brand.900' fontWeight='700'>
+          <Heading as='h2' size='xl' color='red.500' fontWeight='700'>
             Full Stack JS developer
           </Heading>
         </Flex>

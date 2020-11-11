@@ -9,17 +9,24 @@ export default function ExperienceItem({ colorMode, title, desc }) {
         w='16px'
         h='16px'
         borderRadius='32px'
-        backgroundColor='brand.900'
+        backgroundColor='red.500'
         mr='4'
+        mt='5'
       ></Box>
       <Box
         borderWidth='1px'
         borderRadius='8px'
         borderColor={borderColor[colorMode]}
-        p='6'
+        p='4'
         w={['100%', '100%', '75%', '60%']}
       >
-        <Heading as='h5' size='md' mb='2' color={textColor[colorMode]} fontWeight='900'>
+        <Heading
+          as='h5'
+          size='md'
+          mb='2'
+          color={textColor[colorMode]}
+          fontWeight='900'
+        >
           {title}
         </Heading>
         <Text color={iconColor[colorMode]}>{desc}</Text>

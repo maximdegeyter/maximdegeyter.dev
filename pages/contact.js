@@ -90,7 +90,7 @@ export default function Contact() {
                     h='48px'
                     w={['50%', '40%', '30%', '25%']}
                     borderRadius='8px'
-                    backgroundColor='brand.900'
+                    backgroundColor='red.500'
                     color='white'
                     mt='3'
                     _hover={{ backgroundColor: 'red.600' }}

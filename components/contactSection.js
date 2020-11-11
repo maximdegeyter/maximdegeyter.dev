@@ -18,7 +18,7 @@ export default function ContactSection({ colorMode }) {
         bg={bgColor[colorMode]}
         borderWidth='1px'
         borderRadius='8px'
-        borderColor='brand.900'
+        borderColor='red.500'
         direction={['column', 'column', 'row', 'row']}
         justify='space-between'
         align='center'
@@ -35,7 +35,7 @@ export default function ContactSection({ colorMode }) {
           h='48px'
           w={['45%', '40%', '30%', '25%']}
           borderRadius='8px'
-          backgroundColor='brand.900'
+          backgroundColor='red.500'
           color='white'
           rightIcon={MdSend}
           variantColor='white'

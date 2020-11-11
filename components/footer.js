@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <Box
       as='footer'
-      backgroundColor={ colorMode === 'light' ? 'brand.800' : '#6D3A40' }
+      backgroundColor={colorMode === 'light' ? 'red.300' : '#6D3A40'}
       h='192px'
       w='100vw'
       px={['2', '3', '4', '0']}
