@@ -6,10 +6,14 @@ import {
   List,
   ListItem,
   ListIcon,
+  useColorMode
 } from '@chakra-ui/core';
 import { MdCheckCircle } from 'react-icons/md';
+import { textColor, bgColor, borderColor } from '../styles/theme';
 
 export default function About() {
+  const { colorMode } = useColorMode();
+
   return (
     <div>
       <Head>
@@ -26,13 +30,13 @@ export default function About() {
         my='16'
         px={['2', '3', '4', '0']}
       >
-        <Heading as='h2' size='xl' mb='8' color='text.900' fontWeight='900'>
+        <Heading as='h2' size='xl' mb='8' color={textColor[colorMode]} fontWeight='900'>
           About.
         </Heading>
         <Box
           w={['100%', '100%', '100%', '720px']}
           p='6'
-          bg='brand.600'
+          bg={bgColor[colorMode]}
           borderWidth='1px'
           borderRadius='8px'
           borderColor='brand.900'
@@ -66,8 +70,8 @@ export default function About() {
             </ListItem>
           </List>
         </Box>
-        <Box w='100%' py='3' borderBottom='solid 1px' borderColor='text.600'>
-          <Heading as='h3' size='lg' mb='2' color='text.900' fontWeight='900'>
+        <Box w='100%' py='3' borderBottom='solid 1px' borderColor={borderColor[colorMode]}>
+          <Heading as='h3' size='lg' mb='2' color={textColor[colorMode]} fontWeight='900'>
             Tech Stack
           </Heading>
         </Box>

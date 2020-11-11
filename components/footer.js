@@ -1,12 +1,13 @@
-import { Flex, Box, Text } from '@chakra-ui/core';
+import { Flex, Box, Text, useColorMode } from '@chakra-ui/core';
 
 import Socials from './socials';
 
 export default function Footer() {
+  const { colorMode } = useColorMode();
   return (
     <Box
       as='footer'
-      backgroundColor='brand.800'
+      backgroundColor={ colorMode === 'light' ? 'brand.800' : '#6D3A40' }
       h='192px'
       w='100vw'
       px={['2', '3', '4', '0']}

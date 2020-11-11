@@ -1,8 +1,9 @@
 import NextLink from 'next/link';
 import { Flex, Heading, Box, Button, Text } from '@chakra-ui/core';
 import { MdSend } from 'react-icons/md';
+import { textColor, iconColor, bgColor } from '../styles/theme';
 
-export default function ContactSection() {
+export default function ContactSection({ colorMode }) {
   return (
     <Box
       w={['100%', '100%', '100%', '720px']}
@@ -14,7 +15,7 @@ export default function ContactSection() {
       <Flex
         w='100%'
         p='6'
-        bg='brand.600'
+        bg={bgColor[colorMode]}
         borderWidth='1px'
         borderRadius='8px'
         borderColor='brand.900'
@@ -23,10 +24,10 @@ export default function ContactSection() {
         align='center'
       >
         <Box>
-          <Heading as='h3' size='lg' color='text.900'>
+          <Heading as='h3' size='lg' color={textColor[colorMode]}>
             Interested in a collaboration or chat?
           </Heading>
-          <Text color='text.800'>
+          <Text color={iconColor[colorMode]}>
             I like to work on cool stuff, so hit me up!
           </Text>
         </Box>
@@ -39,7 +40,7 @@ export default function ContactSection() {
           rightIcon={MdSend}
           variantColor='white'
           mt={['3', '3', '0']}
-          _hover={{ backgroundColor: 'red.700' }}
+          _hover={{ backgroundColor: 'red.600' }}
         >
           <NextLink href='/contact' passHref>
             Let's talk

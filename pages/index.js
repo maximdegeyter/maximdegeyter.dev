@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex } from '@chakra-ui/core';
+import { Flex, useColorMode } from '@chakra-ui/core';
 
 import Intro from '../components/intro';
 import AboutSection from '../components/aboutSection';
@@ -7,6 +7,7 @@ import Experience from '../components/experience';
 import ContactSection from '../components/contactSection';
 
 export default function Home() {
+  const { colorMode } = useColorMode();
   return (
     <>
       <Head>
@@ -25,10 +26,10 @@ export default function Home() {
         mx='auto'
         my='16'
       >
-        <Intro />
-        <AboutSection />
-        <Experience />
-        <ContactSection />
+        <Intro colorMode={colorMode} />
+        <AboutSection colorMode={colorMode} />
+        <Experience colorMode={colorMode} />
+        <ContactSection colorMode={colorMode} />
       </Flex>
     </>
   );

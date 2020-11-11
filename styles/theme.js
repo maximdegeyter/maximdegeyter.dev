@@ -40,3 +40,10 @@ const customTheme = {
 };
 
 export default customTheme;
+
+export const textColor = { light: 'text.900', dark: 'gray.200' };
+export const iconColor = { light: 'text.800', dark: 'gray.400' };
+export const tertiaryColor = { light: 'text.700', dark: 'gray.500' };
+export const borderColor = { light: 'text.600', dark: 'gray.600' };
+export const bgColor = { light: 'brand.600', dark: '#432D36' };
+export const tagBgColor = { light: 'brand.700', dark: '#6D3A40' };

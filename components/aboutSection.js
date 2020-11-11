@@ -1,7 +1,8 @@
 import NextLink from 'next/link';
 import { Heading, Flex, Link, Button, Text } from '@chakra-ui/core';
+import { textColor, iconColor } from '../styles/theme';
 
-export default function AboutSection() {
+export default function AboutSection({ colorMode }) {
   return (
     <Flex
       w={['100%', '100%', '100%', '720px']}
@@ -10,12 +11,12 @@ export default function AboutSection() {
       mx='auto'
       mb='16'
     >
-      <Heading as='h3' size='lg' mb={4} color='text.900' fontWeight='900'>
+      <Heading as='h3' size='lg' mb={4} color={textColor[colorMode]} fontWeight='900'>
         About me.
       </Heading>
-      <Text color='text.800' lineHeight='170%' letterSpacing='.005rem'>
+      <Text color={iconColor[colorMode]} lineHeight='170%' letterSpacing='.005rem'>
         I'm a 25 year old{' '}
-        <Text as='span' fontWeight='bold' color='text.900'>
+        <Text as='span' fontWeight='bold' color={textColor[colorMode]}>
           Devine (Digital design & development) alumni
         </Text>{' '}
         from Ghent, Belgium 🇧🇪. Recently, I started my first job as an AEM
@@ -38,7 +39,7 @@ export default function AboutSection() {
         backgroundColor='brand.900'
         color='white'
         mt='6'
-        _hover={{ backgroundColor: 'red.700' }}
+        _hover={{ backgroundColor: 'red.600' }}
       >
         <NextLink href='/about' passHref>
           More about me

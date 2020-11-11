@@ -1,9 +1,19 @@
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { Heading, Flex, Link, IconButton, Box } from '@chakra-ui/core';
+import {
+  Heading,
+  Flex,
+  Link,
+  IconButton,
+  Box,
+  useColorMode,
+} from '@chakra-ui/core';
+
+import { textColor, borderColor } from '../styles/theme';
 
 export default function Header() {
   const router = useRouter();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Box
@@ -11,7 +21,7 @@ export default function Header() {
       h='64px'
       w='100vw'
       borderBottom='1px solid'
-      borderBottomColor='text.600'
+      borderBottomColor={borderColor[colorMode]}
       px={['2', '3', '4', '0']}
     >
       <Flex
@@ -25,7 +35,12 @@ export default function Header() {
       >
         <NextLink href='/' passHref>
           <Link as='a'>
-            <Heading as='h1' size={['md', 'lg']} fontWeight='700'>
+            <Heading
+              as='h1'
+              size={['md', 'lg']}
+              fontWeight='700'
+              color={textColor[colorMode]}
+            >
               &lt;Maxim&gt;
             </Heading>
           </Link>
@@ -35,7 +50,9 @@ export default function Header() {
             <Link
               as='a'
               px={['1', '3', '4']}
-              color={router.pathname == '/about' ? 'brand.900' : 'text.900'}
+              color={
+                router.pathname == '/about' ? 'brand.900' : textColor[colorMode]
+              }
               fontWeight={router.pathname == '/about' ? 'bold' : 'regular'}
             >
               About
@@ -45,7 +62,11 @@ export default function Header() {
             <Link
               as='a'
               px={['1', '3', '4']}
-              color={router.pathname == '/projects' ? 'brand.900' : 'text.900'}
+              color={
+                router.pathname == '/projects'
+                  ? 'brand.900'
+                  : textColor[colorMode]
+              }
               fontWeight={router.pathname == '/projects' ? 'bold' : 'regular'}
             >
               Projects
@@ -55,7 +76,11 @@ export default function Header() {
             <Link
               as='a'
               px={['1', '3', '4']}
-              color={router.pathname == '/contact' ? 'brand.900' : 'text.900'}
+              color={
+                router.pathname == '/contact'
+                  ? 'brand.900'
+                  : textColor[colorMode]
+              }
               fontWeight={router.pathname == '/contact' ? 'bold' : 'regular'}
             >
               Contact
@@ -65,7 +90,9 @@ export default function Header() {
             <Link
               as='a'
               px={['1', '3', '4']}
-              color={router.pathname == '/blog' ? 'brand.900' : 'text.900'}
+              color={
+                router.pathname == '/blog' ? 'brand.900' : textColor[colorMode]
+              }
               fontWeight={router.pathname == '/blog' ? 'bold' : 'regular'}
             >
               Blog
@@ -74,8 +101,9 @@ export default function Header() {
         </Box>
         <IconButton
           aria-label='Toggle dark mode'
-          icon={'moon'}
+          icon={colorMode === 'dark' ? 'sun' : 'moon'}
           variant='link'
+          onClick={toggleColorMode}
         />
       </Flex>
     </Box>

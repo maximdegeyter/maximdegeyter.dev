@@ -1,6 +1,8 @@
 import { Heading, Flex, Box, Text } from '@chakra-ui/core';
 
-export default function ExperienceItem({ title, desc }) {
+import { textColor, borderColor, iconColor } from '../styles/theme';
+
+export default function ExperienceItem({ colorMode, title, desc }) {
   return (
     <Flex direction='row' ml='8' mb='6'>
       <Box
@@ -13,13 +15,14 @@ export default function ExperienceItem({ title, desc }) {
       <Box
         borderWidth='1px'
         borderRadius='8px'
+        borderColor={borderColor[colorMode]}
         p='6'
         w={['100%', '100%', '75%', '60%']}
       >
-        <Heading as='h5' size='md' mb='2' color='text.900' fontWeight='900'>
+        <Heading as='h5' size='md' mb='2' color={textColor[colorMode]} fontWeight='900'>
           {title}
         </Heading>
-        <Text color='text.800'>{desc}</Text>
+        <Text color={iconColor[colorMode]}>{desc}</Text>
       </Box>
     </Flex>
   );
